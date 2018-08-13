@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: istio-telemetry
+spec:
+  template:
+    spec:
+      containers:
+      - name: mixer
+        image: "alekssaul/istio/mixer:0.8.0"
+      - name: istio-proxy
+        image: "alekssaul/istio/proxyv2:0.8.0"

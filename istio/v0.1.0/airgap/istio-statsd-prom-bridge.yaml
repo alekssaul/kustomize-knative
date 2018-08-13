@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: istio-statsd-prom-bridge
+spec:
+  template:
+    spec:
+      containers:
+      - name: statsd-prom-bridge
+        image: "alekssaul/prom/statsd-exporter:latest"

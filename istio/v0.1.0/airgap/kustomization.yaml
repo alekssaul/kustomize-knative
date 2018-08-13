@@ -1,0 +1,17 @@
+
+bases:
+- ./../base
+
+patches:
+- istio-statsd-prom-bridge.yaml
+- istio-egressgateway.yaml
+- istio-ingress.yaml
+- istio-ingressgateway.yaml
+- istio-policy.yaml
+- istio-telemetry.yaml
+- istio-pilot.yaml
+- istio-citadel.yaml
+- istio-sidecar-injector.yaml
+- istio-cleanup-old-ca.yaml
+- istio-mixer-post-install.yaml
+- istio-sidecar-injector-configmap.yaml

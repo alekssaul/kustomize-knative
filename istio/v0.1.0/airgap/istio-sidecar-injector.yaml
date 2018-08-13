@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: istio-sidecar-injector
+spec:
+  template:
+    spec:
+      containers:
+      - name: sidecar-injector-webhook
+        image: "alekssaul/istio/sidecar_injector:0.8.0"

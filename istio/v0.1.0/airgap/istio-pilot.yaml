@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: istio-pilot
+spec:
+  template:
+    spec:
+      containers:
+      - name: discovery
+        image: "alekssaul/istio/pilot:0.8.0"
+      - name: istio-proxy
+        image: "alekssaul/istio/proxyv2:0.8.0"

@@ -1,0 +1,10 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: istio-mixer-post-install
+spec:
+  template:
+    spec:
+      containers:
+      - name: hyperkube
+        image: "alekssaul/coreos/hyperkube:v1.7.6_coreos.0"
