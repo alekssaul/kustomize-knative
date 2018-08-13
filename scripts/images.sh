@@ -22,7 +22,7 @@ function parse_image() {
         columncount=$(echo $1 | grep -o ":" | wc -l )
         if [ $columncount -gt 0 ] 
         then
-            fetch_image $1 $2 $slashcount $4 $version
+            fetch_image $1 $2 $slashcount $3 $version
         fi
     fi
     
