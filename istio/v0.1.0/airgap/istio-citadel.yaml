@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: citadel
-        image: "alekssaul/istio/citadel:0.8.0"
+        image: "docker.io/istio/citadel:0.8.0"

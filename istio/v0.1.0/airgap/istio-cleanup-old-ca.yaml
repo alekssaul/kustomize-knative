@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: hyperkube
-        image: "alekssaul/coreos/hyperkube:v1.7.6_coreos.0"
+        image: "quay.io/coreos/hyperkube:v1.7.6_coreos.0"

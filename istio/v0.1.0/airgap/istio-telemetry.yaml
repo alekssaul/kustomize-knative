@@ -7,6 +7,6 @@ spec:
     spec:
       containers:
       - name: mixer
-        image: "alekssaul/istio/mixer:0.8.0"
+        image: "docker.io/istio/mixer:0.8.0"
       - name: istio-proxy
-        image: "alekssaul/istio/proxyv2:0.8.0"
+        image: "docker.io/istio/proxyv2:0.8.0"

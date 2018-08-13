@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: statsd-prom-bridge
-        image: "alekssaul/prom/statsd-exporter:latest"
+        image: "prom/statsd-exporter:latest"

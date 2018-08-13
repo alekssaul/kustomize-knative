@@ -8,7 +8,7 @@ data:
     template: |-
       initContainers:
       - name: istio-init
-        image: alekssaul/istio/proxy_init:0.8.0
+        image: docker.io/istio/proxy_init:0.8.0
         args:
         - "-p"
         - [[ .MeshConfig.ProxyListenPort ]]
@@ -60,7 +60,7 @@ data:
         image: [[ if (isset .ObjectMeta.Annotations "sidecar.istio.io/proxyImage") -]]
         "[[ index .ObjectMeta.Annotations "sidecar.istio.io/proxyImage" ]]"
         [[ else -]]
-        alekssaul/istio/proxyv2:0.8.0
+        docker.io/istio/proxyv2:0.8.0
         [[ end -]]
         args:
         - proxy

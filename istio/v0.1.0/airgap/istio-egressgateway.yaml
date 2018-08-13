@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: egressgateway
-        image: "alekssaul/istio/proxyv2:0.8.0"
+        image: "docker.io/istio/proxyv2:0.8.0"
